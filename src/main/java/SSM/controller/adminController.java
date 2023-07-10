@@ -201,9 +201,6 @@ public class adminController {
         g.setIntro(intro);
         g.setStock(stock);
         g.setTypeid(typeid);
-        // 设置其他属性...
-
-        // 保存文件
         String originalFilename = cover.getOriginalFilename();
 //        originalFilename = originalFilename.substring(originalFilename.lastIndexOf("."));
         originalFilename = "/"+new Date().getTime()+originalFilename.substring(originalFilename.lastIndexOf("."));
