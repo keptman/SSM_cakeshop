@@ -3,7 +3,7 @@
 <nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="${pageContext.request.contextPath }/admin/admin_index.jsp">网上租房后台</a>
+				<a class="navbar-brand" href="${pageContext.request.contextPath }/admin/admin_index.jsp">蛋糕店后台</a>
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
