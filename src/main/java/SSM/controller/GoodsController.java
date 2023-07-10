@@ -13,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
-
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -30,8 +29,8 @@ public class GoodsController {
        @RequestMapping("/index")
        public ModelAndView indexList(){
           ModelAndView modelAndView = new ModelAndView();
-          List<Map<String, Object>> hotList = goodsService.GoodsList(21);
-          List<Map<String, Object>> newList = goodsService.GoodsList(22);
+          List<Map<String, Object>> hotList = goodsService.GoodsList(2);
+          List<Map<String, Object>> newList = goodsService.GoodsList(3);
           Map<String,Object>fGoods= goodsService.FGoods();
           modelAndView.addObject("hotList",hotList);
           modelAndView.addObject("newList",newList);

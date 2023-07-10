@@ -9,7 +9,7 @@
 				<ul class="nav navbar-nav">
 					<li ><a href="${pageContext.request.contextPath }/admin/order_list">订单管理</a></li>
 					<li ><a href="${pageContext.request.contextPath }/admin/user_list">客户管理</a></li>
-					<li ><a href="${pageContext.request.contextPath }/admin/goods_list">房品管理</a></li>
+					<li ><a href="${pageContext.request.contextPath }/admin/goods_list">商品管理</a></li>
 					<li ><a href="${pageContext.request.contextPath }/admin/type_list">类目管理</a></li>
 				
 					<li><a href="${pageContext.request.contextPath }/user/user_logout">退出</a></li>

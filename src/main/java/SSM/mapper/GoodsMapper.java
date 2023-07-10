@@ -14,7 +14,7 @@ public interface GoodsMapper {
     @Select("select g.id,g.name,g.cover,g.price,t.name typename from recommend r,goods g,type t where type=#{type} and r.goods_id=g.id and g.type_id=t.id")
     List<Map<String, Object>> GoodsList(int type);
 
-    @Select("select g.id,g.name,g.cover,g.price from recommend r,goods g where type=23 and r.goods_id=g.id LIMIT 1")
+    @Select("select g.id,g.name,g.cover,g.price from recommend r,goods g where type=1 and r.goods_id=g.id LIMIT 1")
     Map<String, Object> FGoods();
 
     @Select("select * from goods")

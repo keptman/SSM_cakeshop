@@ -19,12 +19,12 @@
 					<ul class="nav navbar-nav"> 
 						<li><a href="${pageContext.request.contextPath }/goods/index" <c:if test="${param.flag==1 }">class="active"</c:if>>首页</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle <c:if test="${param.flag==2 }">active</c:if>" data-toggle="dropdown"  >房屋类型<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle <c:if test="${param.flag==2 }">active</c:if>" data-toggle="dropdown"  >商品类型<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-2">
 								<li>
 									<div class="row">
 										<div class="col-sm-12">
-											<h4>房屋类型</h4>
+											<h4>商品类型</h4>
 											<ul class="multi-column-dropdown">
 												
 													<li><a class="list" href="${pageContext.request.contextPath }/goods/goods-list">全部类型</a></li>
@@ -37,8 +37,8 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="${pageContext.request.contextPath }/goods/goodsrecommend_list?type=21" <c:if test="${param.flag==3 && type==21 }">class="active"</c:if>>热销房型</a></li>
-						<li><a href="${pageContext.request.contextPath }/goods/goodsrecommend_list?type=22" <c:if test="${param.flag==3 && type==22 }">class="active"</c:if>>新品房型</a></li>
+						<li><a href="${pageContext.request.contextPath }/goods/goodsrecommend_list?type=2" <c:if test="${param.flag==3 && type==2 }">class="active"</c:if>>热销</a></li>
+						<li><a href="${pageContext.request.contextPath }/goods/goodsrecommend_list?type=3" <c:if test="${param.flag==3 && type==3 }">class="active"</c:if>>新品</a></li>
 						
 						<c:choose><c:when test="${empty loginuser }">
 							<li><a href="${pageContext.request.contextPath }/user_register.jsp" >注册</a></li>
